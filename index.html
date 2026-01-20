@@ -2,23 +2,136 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Vibha Yarlagadda
+EMAIL: vsyarlag@uci.edu
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Vibha Yarlagadda">
+  <meta name="description" content="Portfolio website of Vibha Yarlagadda, Computer Science student specializing in AI safety and machine learning">
+  <title>Vibha Yarlagadda | AI Safety & Machine Learning</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-name">Vibha Yarlagadda</span>
+        <img src="images/file.svg" class="brand-logo" alt="Flower Icon">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero/Landing Section -->
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6 order-lg-2 text-center mb-4 mb-lg-0">
+            <div class="profile-container">
+              <img src="images/profile_pic.jpeg" 
+                   alt="Picture of Vibha Yarlagadda, Computer Science student" 
+                   class="profile-image">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="hero-content">
+              <p class="hero-greeting">Hey, I'm</p>
+              <h1 class="hero-name">Vibha</h1>
+              <h1 class="hero-name">Yarlagadda</h1>
+              <div class="hero-location">
+                <p>Originally from</p>
+                <p class="location-text">San Francisco Bay Area</p>
+              </div>
+              <div class="hero-location">
+                <p>Currently in</p>
+                <p class="location-text">Irvine, California</p>
+              </div>
+              <div class="hero-subtitle">
+                <p>Computer Science Student | AI Safety & Machine Learning | Systems + Human-Centered Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Portfolio Section -->
+    <section class="portfolio-section">
+      <div class="container">
+        <div class="portfolio-content">
+          <a href="about.html" class="portfolio-section-link">
+            <h2 class="portfolio-section-title">ABOUT ME</h2>
+          </a>
+          <p class="portfolio-section-label">Experience</p>
+          <div class="portfolio-links">
+            <a href="experience.html" class="portfolio-link">Scale AI</a>
+            <a href="experience.html" class="portfolio-link">UC Irvine</a>
+            <a href="experience.html" class="portfolio-link">Forsys Inc</a>
+            <a href="experience.html" class="portfolio-link">Research</a>
+          </div>
+          <p class="portfolio-section-label">Projects</p>
+          <div class="portfolio-links">
+            <a href="projects.html" class="portfolio-link">Search Engine</a>
+            <a href="projects.html" class="portfolio-link">Emotion Detection</a>
+            <a href="projects.html" class="portfolio-link">Battleship RL</a>
+          </div>
+          <p class="portfolio-section-label">Skills & Tools</p>
+          <div class="portfolio-links">
+            <a href="skills.html" class="portfolio-link">AI/ML</a>
+            <a href="skills.html" class="portfolio-link">Languages</a>
+            <a href="skills.html" class="portfolio-link">Systems</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-minimal">
+    <div class="container">
+      <p class="footer-text">&copy; 2024 Vibha Yarlagadda</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

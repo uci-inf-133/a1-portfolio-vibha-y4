@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Vibha Yarlagadda
+EMAIL: vsyarlag@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Vibha Yarlagadda">
+  <meta name="description" content="Portfolio projects by Vibha Yarlagadda">
+  <title>Projects - Vibha Yarlagadda</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-name">Vibha Yarlagadda</span>
+        <img src="images/file.svg" class="brand-logo" alt="Flower Icon">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <h1 class="page-title mb-5 text-center">Projects</h1>
+    
+    <div class="row g-4">
+      <!-- Search Engine Project -->
+      <div class="col-lg-6">
+        <article class="project-card">
+          <div class="card-body">
+            <div class="project-icon">
+              <span class="material-icons">search</span>
+            </div>
+            <h2 class="project-title">Search Engine & Information Retrieval System</h2>
+            <p class="project-description">Built a comprehensive search engine with advanced information retrieval capabilities, implementing full-text search with ranking algorithms and optimized indexing structures.</p>
+            <div class="project-details">
+              <h3>Key Contributions:</h3>
+              <ul class="project-list">
+                <li>Built a full inverted index with stemming and tf-idf ranking</li>
+                <li>Implemented weighted importance for headings and emphasized text</li>
+                <li>Supported boolean AND queries and evaluated ranking performance</li>
+              </ul>
+              <div class="project-tech mt-3">
+                <strong>Technologies:</strong>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">tf-idf</span>
+                <span class="tech-tag">Indexing Structures</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Emotion Detection Project -->
+      <div class="col-lg-6">
+        <article class="project-card">
+          <div class="card-body">
+            <div class="project-icon">
+              <span class="material-icons">face</span>
+            </div>
+            <h2 class="project-title">Emotion Detection via Deep Learning</h2>
+            <p class="project-description">Developed a convolutional neural network to classify facial emotions from images, achieving high accuracy through careful preprocessing and model optimization techniques.</p>
+            <div class="project-details">
+              <h3>Key Contributions:</h3>
+              <ul class="project-list">
+                <li>Trained a CNN on a 13k+ image dataset to classify 7 facial emotions</li>
+                <li>Led preprocessing, memory optimization, and batching strategy</li>
+                <li>Improved validation accuracy by ~20% through augmentation and class balancing</li>
+                <li>Final model achieved ~86% accuracy</li>
+              </ul>
+              <div class="project-tech mt-3">
+                <strong>Technologies:</strong>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">CNNs</span>
+                <span class="tech-tag">Data Augmentation</span>
+                <span class="tech-tag">Mixed-Precision Training</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Battleship RL Project -->
+      <div class="col-lg-12">
+        <article class="project-card project-card-wide">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="project-icon">
+                  <span class="material-icons">sports_esports</span>
+                </div>
+                <h2 class="project-title">Battleship Reinforcement Learning</h2>
+                <p class="project-description">Designed and implemented multiple reinforcement learning agents to play Battleship, comparing different RL algorithms in a partially observable environment and evaluating performance against baseline strategies.</p>
+                <div class="project-details">
+                  <h3>Key Contributions:</h3>
+                  <ul class="project-list">
+                    <li>Compared PPO, DQN, and REINFORCE agents in a partially observable environment</li>
+                    <li>Designed a custom 3-channel state representation and CNN feature extractor</li>
+                    <li>Implemented action masking to prevent invalid moves</li>
+                    <li>Evaluated agents against heuristic and random baselines</li>
+                  </ul>
+                  <div class="project-tech mt-3">
+                    <strong>Technologies:</strong>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Stable-Baselines3</span>
+                    <span class="tech-tag">Gymnasium</span>
+                    <span class="tech-tag">PPO</span>
+                    <span class="tech-tag">DQN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-minimal">
+    <div class="container">
+      <p class="footer-text">&copy; 2024 Vibha Yarlagadda</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
